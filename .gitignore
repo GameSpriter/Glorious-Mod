@@ -1,0 +1,22 @@
+/bin/
+/build/
+/gradle/
+/run/
+/build.gradle
+/CREDITS-fml.txt
+/forge-1.10.2-12.18.0.2008-changelog.txt
+/Glorious 1.10.2_Client.launch
+/Glorious 1.10.2_Server.launch
+/gradlew
+/gradlew.bat
+/LICENSE-new.txt
+/MinecraftForge-Credits.txt
+/Paulscode IBXM Library License.txt
+/Paulscode SoundSystem CodecIBXM License.txt
+/README.txt
+/Setup Workspace.bat
+/src/
+/eclipse/
+/.gradle/
+/.classpath
+/.settings/
