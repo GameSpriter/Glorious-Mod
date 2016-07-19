@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y":  { "model": "glorious:shinyLog" },
+        "axis=z":   { "model": "glorious:shinyLog", "x": 90 },
+        "axis=x":   { "model": "glorious:shinyLog", "x": 90, "y": 90 },
+        "axis=none": { "model": "glorious:shinyBark" }
+    }
+}

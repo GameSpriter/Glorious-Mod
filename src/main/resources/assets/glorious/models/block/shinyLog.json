@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "glorious:blocks/logShinyTop3",
+        "side": "glorious:blocks/logShiny3"
+    }
+}

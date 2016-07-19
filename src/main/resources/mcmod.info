@@ -1,0 +1,15 @@
+[
+{
+  "modid": "glorious",
+  "name": "Glorious Mod",
+  "description": "Glorious is a WIP mod that uses the power of nature and machinery together.",
+  "version": "",
+  "mcversion": "1.10.2",
+  "url": "Remind me to put a URL to the Repository later",
+  "authorList": ["GameSpriter"],
+  "credits": "LuckyCowShoe for some of the textures used.",
+  "logoFile": "GloriousLogo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
