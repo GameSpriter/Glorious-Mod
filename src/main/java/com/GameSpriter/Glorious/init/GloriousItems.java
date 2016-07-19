@@ -1,5 +1,6 @@
 package com.GameSpriter.Glorious.init;
 
+import com.GameSpriter.Glorious.Glorious;
 import com.GameSpriter.Glorious.items.ItemGrinderBowl;
 import com.GameSpriter.Glorious.items.ItemShinyStick;
 import com.GameSpriter.Glorious.items.ItemSparklingPowder;
@@ -16,9 +17,9 @@ public class GloriousItems {
 	public static Item shinyStick;
 	
 	public static void init(){
-		sparklingPowder = new ItemSparklingPowder();
-		grinderBowl = new ItemGrinderBowl();
-		shinyStick = new ItemShinyStick();
+		sparklingPowder = new ItemSparklingPowder().setCreativeTab(Glorious.tabGlorious);
+		grinderBowl = new ItemGrinderBowl().setCreativeTab(Glorious.tabGlorious);
+		shinyStick = new ItemShinyStick().setCreativeTab(Glorious.tabGlorious);
 	}
 		
 	public static void register() {

@@ -1,5 +1,6 @@
 package com.GameSpriter.Glorious.init;
 
+import com.GameSpriter.Glorious.Glorious;
 import com.GameSpriter.Glorious.blocks.BlockShinyPlanks;
 import com.GameSpriter.Glorious.blocks.BlockShinySapling;
 import com.GameSpriter.Glorious.blocks.BlockShinyWood;
@@ -18,9 +19,9 @@ public class GloriousBlocks {
 	public static Block shinySapling;
 	
 	public static void init(){
-		shinyWood = new BlockShinyWood();
-		shinyPlanks = new BlockShinyPlanks();
-		shinySapling = new BlockShinySapling();
+		shinyWood = new BlockShinyWood().setCreativeTab(Glorious.tabGlorious);
+		shinyPlanks = new BlockShinyPlanks().setCreativeTab(Glorious.tabGlorious);
+		shinySapling = new BlockShinySapling().setCreativeTab(Glorious.tabGlorious);
 	}
 		
 	public static void register() {
