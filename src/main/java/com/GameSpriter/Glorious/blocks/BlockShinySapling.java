@@ -35,8 +35,8 @@ public class BlockShinySapling extends BlockSapling {
     
 	
 	public BlockShinySapling() {
-		setUnlocalizedName(Reference.GloriousBlocks.SHINY_SAPPLING.getUnlocalizedName());
-		setRegistryName(Reference.GloriousBlocks.SHINY_SAPPLING.getRegistryName());
+		setUnlocalizedName(Reference.GloriousBlocks.SHINY_SAPLING.getUnlocalizedName());
+		setRegistryName(Reference.GloriousBlocks.SHINY_SAPLING.getRegistryName());
 		
 	}
 
