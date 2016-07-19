@@ -33,7 +33,7 @@ public class Reference {
 	public static enum GloriousBlocks { //SHINYWOOD.getUnlocalizedName()
 		SHINY_WOOD("shinyWood", "BlockShinyWood"),
 		SHINY_PLANKS("shinyPlanks", "BlockShinyPlanks"),
-		SHINY_SAPLING("shinySappling", "BlockShinySapling");
+		SHINY_SAPLING("shinySapling", "BlockShinySapling");
 		
 		private String unlocalizedName;
 		private String registryName;
