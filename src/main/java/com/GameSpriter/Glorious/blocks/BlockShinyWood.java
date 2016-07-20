@@ -4,12 +4,14 @@ import javax.annotation.Nullable;
 
 import com.GameSpriter.Glorious.Reference;
 import com.GameSpriter.Glorious.init.GloriousBlocks;
+import com.google.common.collect.ImmutableList;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRotatedPillar;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
+import net.minecraft.block.state.BlockStateBase;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Bootstrap;
 import net.minecraft.util.EnumFacing;
@@ -27,10 +29,11 @@ public class BlockShinyWood extends BlockRotatedPillar {
 		setUnlocalizedName(Reference.GloriousBlocks.SHINY_WOOD.getUnlocalizedName());
 		setRegistryName(Reference.GloriousBlocks.SHINY_WOOD.getRegistryName());
 		
+		
 		//Block Properties
 		setHardness(2.0F);
 		this.setHarvestLevel("ItemAxe", 2);
-		this.setDefaultState(this.blockState.getBaseState());
+		this.setDefaultState(getStateFromMeta(1));
 	}
 	
 	@Override public boolean isFlammable(IBlockAccess world, BlockPos pos, EnumFacing face) { return true; }
