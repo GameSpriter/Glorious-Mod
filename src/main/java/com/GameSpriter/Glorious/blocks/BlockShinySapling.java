@@ -5,14 +5,9 @@ import java.util.Random;
 import com.GameSpriter.Glorious.Reference;
 import com.GameSpriter.Glorious.world.WorldGenShinyTree;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockDirt;
-import net.minecraft.block.BlockFlower;
-import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.BlockSapling;
-import net.minecraft.block.properties.PropertyEnum;
-import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.renderer.block.statemap.StateMap.Builder;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -22,10 +17,10 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 
 public class BlockShinySapling extends BlockSapling {
 
+	
 	public BlockShinySapling() {
 		setUnlocalizedName(Reference.GloriousBlocks.SHINY_SAPLING.getUnlocalizedName());
 		setRegistryName(Reference.GloriousBlocks.SHINY_SAPLING.getRegistryName());
-		
 	}
 
 	@Override

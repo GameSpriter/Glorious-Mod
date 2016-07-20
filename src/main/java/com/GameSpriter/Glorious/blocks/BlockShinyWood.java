@@ -22,8 +22,6 @@ import net.minecraft.world.IBlockAccess;
 
 public class BlockShinyWood extends BlockRotatedPillar {
 
-	public static final PropertyEnum<EnumFacing.Axis> AXIS = PropertyEnum.<EnumFacing.Axis>create("axis", EnumFacing.Axis.class);
-	
 	public BlockShinyWood() {
 		super(Material.WOOD);
 		setUnlocalizedName(Reference.GloriousBlocks.SHINY_WOOD.getUnlocalizedName());

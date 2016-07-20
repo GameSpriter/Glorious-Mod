@@ -1,5 +1,7 @@
 {
     "variants": {
-        "normal": { "model": "glorious:shinySapling" }
-    }
+        "stage=0": { "model": "glorious:shinySapling" },
+        "stage=1": { "model": "glorious:shinySapling" }
+        }
 }
+

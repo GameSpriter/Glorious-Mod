@@ -1,26 +1,22 @@
 package com.GameSpriter.Glorious.init;
 
 import com.GameSpriter.Glorious.Glorious;
-import com.GameSpriter.Glorious.Reference;
 import com.GameSpriter.Glorious.blocks.BlockShinyPlanks;
 import com.GameSpriter.Glorious.blocks.BlockShinySapling;
 import com.GameSpriter.Glorious.blocks.BlockShinyWood;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockPlanks;
-import net.minecraft.block.BlockPlanks.EnumType;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.client.renderer.block.statemap.StateMap.Builder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.util.IStringSerializable;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class GloriousBlocks {
 
+	//public static Builder build;
+	
 	public static Block shinyWood;
 	public static Block shinyPlanks;
 	public static Block shinySapling;
@@ -28,7 +24,7 @@ public class GloriousBlocks {
 	public static void init(){
 		shinyWood = new BlockShinyWood().setCreativeTab(Glorious.tabGlorious);
 		shinyPlanks = new BlockShinyPlanks().setCreativeTab(Glorious.tabGlorious);
-		shinySapling = new BlockShinySapling();//.setCreativeTab(Glorious.tabGlorious);
+		shinySapling = new BlockShinySapling().setCreativeTab(Glorious.tabGlorious);
 	}
 		
 	public static void register() {
