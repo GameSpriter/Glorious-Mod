@@ -27,7 +27,7 @@ public class GloriousBlocks {
 		shinySapling = new BlockShinySapling().setCreativeTab(Glorious.tabGlorious);
 	}
 		
-	public static void register() {
+	public static void register() {// 
 		registerBlock(shinyWood);
 		registerBlock(shinyPlanks);
 		registerBlock(shinySapling);
