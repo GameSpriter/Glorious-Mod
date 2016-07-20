@@ -35,7 +35,7 @@ public class GloriousItems {
 	}
 	
 	private static void registerRender(Item item) {
-		Minecraft.getMinecraft().getRenderItem().;
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 	}
 	
 }
