@@ -30,7 +30,6 @@ public class Glorious {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event){
-		//System.out.println("Pre Init Start");
 				
 		GloriousBlocks.init();
 		GloriousBlocks.register();
@@ -38,18 +37,16 @@ public class Glorious {
 		GloriousItems.init();
 		GloriousItems.register();
 		
-		//System.out.println("Pre Init End");
+		proxy.preInit();
 	}
 
 	@EventHandler
 	public void init(FMLInitializationEvent event){
-		//System.out.println("Init Start");
 		proxy.init();
-		//System.out.println("Init End");
 	}
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event){
-		//System.out.println("PostInit");
+		proxy.postInit();
 	}
 }	
