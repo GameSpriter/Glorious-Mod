@@ -8,12 +8,15 @@ import com.GameSpriter.Glorious.blocks.BlockShinyWood;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.client.renderer.block.statemap.StateMap.Builder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class GloriousBlocks {
 
+	//public static Builder build;
+	
 	public static Block shinyWood;
 	public static Block shinyPlanks;
 	public static Block shinySapling;
@@ -24,7 +27,7 @@ public class GloriousBlocks {
 		shinySapling = new BlockShinySapling().setCreativeTab(Glorious.tabGlorious);
 	}
 		
-	public static void register() {
+	public static void register() {// 
 		registerBlock(shinyWood);
 		registerBlock(shinyPlanks);
 		registerBlock(shinySapling);
@@ -46,6 +49,5 @@ public class GloriousBlocks {
 	private static void registerRender(Block block) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));
 	}
-	
 	
 }

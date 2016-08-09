@@ -1,5 +1,8 @@
 package com.GameSpriter.Glorious;
 
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
 public class Reference {
 	public static final String MOD_ID = "glorious";
 	public static final String NAME = "Glorious Mod";
@@ -7,6 +10,13 @@ public class Reference {
 	
 	public static final String CLIENT_PROXY_CLASS = "com.GameSpriter.Glorious.proxy.ClientProxy";
 	public static final String SERVER_PROXY_CLASS = "com.GameSpriter.Glorious.proxy.ServerProxy";
+	
+	/*
+	 * In the event I inevitably forget how to do it:
+	 * @SideOnly(Side.CLIENT)
+	 * 
+	 */
+	
 	
 	public static enum GloriousItems {
 		SPARKLING_POWDER("sparklingPowder", "ItemSparklingPowder"),
